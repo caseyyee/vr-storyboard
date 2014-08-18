@@ -18,6 +18,7 @@
     "gulp-sass": "~0.2.3",
     "gulp-coffee": "~1.2.5",
     "gulp-jade": "~0.3.0",
-    "gulp-util": "~2.2.6"
+    "gulp-util": "~2.2.6",
+    "gulp-markdown": "~1.0.0"
   }
 }
