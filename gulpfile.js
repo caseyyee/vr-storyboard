@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var coffee = require('gulp-coffee');
 var jade = require('gulp-jade');
 var gutil = require('gulp-util');
 
@@ -10,10 +9,7 @@ gulp.task('normalize', function(){
 });
 
 gulp.task('scripts', function() {
-    gulp.src(['src/coffee/**/*.coffee'])
-        .pipe(coffee().on('error', function(err){
-            gutil.log(gutil.colors.red(err))
-        }))
+    gulp.src(['src/scripts/**/*.js'])
         .pipe(gulp.dest('build/js'));
 });
 
